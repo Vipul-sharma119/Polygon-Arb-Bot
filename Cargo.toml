@@ -17,3 +17,22 @@ log = "0.4"
 env_logger = "0.10"
 dotenv = "0.15"
 rust_decimal = { version = "1.0", features = ["serde"] }
+
+
+# New dependencies for production blockchain interaction
+ethers = "2.0"
+ethers-contract = "2.0"
+ethers-providers = "2.0"
+web3 = "0.19"
+hex = "0.4"
+
+# Additional production dependencies
+tokio-retry = "0.3"  # For retrying failed requests
+thiserror = "1.0"    # Better error handling
+tracing = "0.1"      # Better logging/tracing
+tracing-subscriber = "0.3"
+
+# Optional: For more advanced features
+futures = "0.3"
+parking_lot = "0.12"  # Better mutexes
+dashmap = "5.4"       # Concurrent HashMap
